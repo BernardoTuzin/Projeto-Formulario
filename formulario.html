@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Opinião Estudantil</title>
+    <!-- Inclusão do CSS do Bootstrap 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Pesquisa de Opinião Estudantil</h1>
+        <p class="text-center">Complete o formulário abaixo para nos ajudar a entender melhor suas experiências e necessidades educacionais.</p>
+        
+        <!-- Formulário -->
+        <form action="https://example.com/submit" method="POST">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome Completo:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="ano" class="form-label">Ano Escolar:</label>
+                <select class="form-select" id="ano" name="ano" required>
+                    <option value="">Selecione o Ano Escolar</option>
+                     <option selected value="primeiro">Primeiro Ano</option>
+                    <option value="segundo">Segundo Ano</option>
+                    <option value="terceiro">Terceiro Ano</option>  
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="curso1" class="form-label">Cursos de Interesse:</label><br>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="curso1" name="cursos" value="Matematica">
+                    <label class="form-check-label" for="curso1">Sistemas de Informação</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="curso2" name="cursos" value="Fisica">
+                    <label class="form-check-label" for="curso2">Física</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="curso3" name="cursos" value="Quimica">
+                    <label class="form-check-label" for="curso3">Turismo</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="expectativas" class="form-label">Expectativas para o próximo ano letivo:</label>
+                <textarea class="form-control" id="expectativas" name="expectativas" rows="4" maxlength="100" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="nascimento" class="form-label">Data de Nascimento:</label>
+                <input type="date" class="form-control" id="nascimento" name="nascimento" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="hora-estudo" class="form-label">Hora Preferencial para Estudo:</label>
+                <input type="time" class="form-control" id="hora-estudo" name="hora-estudo" required>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Inclusão do JS do Bootstrap 5.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
